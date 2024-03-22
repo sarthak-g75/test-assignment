@@ -6,7 +6,6 @@ import SecondSection from './hero/SecondSection'
 import { rowData } from '../../data'
 const Hero = () => {
   const [selectAll, setSelectAll] = useState(false)
-
   const [rows, setRows] = useState(rowData)
 
   const handleSelectAll = () => {
@@ -26,6 +25,7 @@ const Hero = () => {
   const selectedRowNumbers = rows
     .filter((row) => row.selected)
     .map((row) => row.id)
+
   return (
     <div className='flex flex-col justify-between lg:w-full md:w-[70%] w-screen py-2 border-2 rounded-lg shadow-md border-slate-100 overflow-hidden'>
       <div className='flex flex-col justify-center gap-4'>
