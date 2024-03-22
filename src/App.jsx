@@ -24,7 +24,7 @@ function App() {
 
   // Function to check if the device is mobile or tablet
   const checkIsMobile = () => {
-    setIsMobile(window.innerWidth <= 450) // Assuming tablets have a maximum width of 768px
+    setIsMobile(window.innerWidth <= 768) // Assuming tablets have a maximum width of 768px
   }
 
   // Check device width on initial load and on resize
